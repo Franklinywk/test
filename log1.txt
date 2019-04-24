@@ -1,0 +1,321 @@
+sterId": "0x0006", "commandId": "0x00"}
+2019-03-05T09:02:56.160 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0006]->cmd_id[0x874DD8] = "0x0000"
+2019-03-05T09:02:56.161 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[x3->cluster[0x873DF8]->0x0000 update end
+2019-03-05T09:02:56.171 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0006", "commandId": "0x00"}
+2019-03-05T09:02:56.222 [DBG] appd::prop_val_send()  num_nodes
+2019-03-05T09:02:56.341 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x0041C9187F890B38", "status": "0x00", "clusterId": "0x0036", "commandId": "0x00"}
+2019-03-05T09:02:56.400 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x7773DEFC00000000", "status": "0x00", "clusterId": "0x0036", "commandId": "0x00"}
+2019-03-05T09:02:56.406 [INF] appd::conf_write()  wrote configuration to file: /root/opt/etc/config/appd.conf.startup
+2019-03-05T09:02:56.407 [DBG] appd::node_step_handler()  0x000D6F000C38A2FB: network query
+2019-03-05T09:02:56.408 [INF] appd::zb_query_info_handler()  0x000D6F000C38A2FB: querying node info
+2019-03-05T09:02:56.409 [DBG] appd::node_op_complete()  0x000D6F000C38A2FB: state change NET_QUERY --> CLOUD_ADD
+2019-03-05T09:02:56.538 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:02:56.540 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:02:56.607 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0006]->cmd_id[0x864108] = "0x0000"
+2019-03-05T09:02:56.609 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[1]->cluster[0x86B7F8]->0x0000 update end
+2019-03-05T09:02:56.611 [INF] appd::conf_write()  wrote configuration to file: /root/opt/etc/config/appd.conf.startup
+2019-03-05T09:02:56.612 [DBG] appd::node_step_handler()  0x000D6F000C38A2FB: cloud add
+2019-03-05T09:02:56.622 [INF] appd::appd_node_add_handler()  sending add_node for 0x000D6F000C38A2FB
+2019-03-05T09:02:56.625 [DBG] appd::data_send_json()  {"cmd":{"proto":"data","id":74,"op":"prop_send","opts":{"confirm":true},"args":[{"property":{"name":"num_nodes","base_type":"integer","value":2,"dev_time_ms":1551776576222}}]}}
+2019-03-05T09:02:56.632 [DBG] appd::data_send_json()  {"cmd":{"proto":"gateway","id":75,"op":"add_node","opts":{"confirm":true},"args":[{"node":{"address":"0x000D6F000C38A2FB","oem_model":"0x0102","interface":1,"power":0,"subdevices":[{"subdevice_key":"1","templates":[{"template_key":"0x0000","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x4000"}]},{"template_key":"0x0003","version":"1.0","properties":[{"name":"0x0000"}]},{"template_key":"0x0006","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"}]},{"template_key":"0x0008","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"}]},{"template_key":"0x0300","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0008"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x4003"},{"name":"0x4004"},{"name":"0x4005"},{"name":"0x4006"},{"name":"0x400a"},{"name":"0x400b"},{"name":"0x400c"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0015"},{"name":"0x0016"},{"name":"0x0017"},{"name":"0x0019"},{"name":"0x001a"},{"name":"0x001b"},{"name":"0x0020"},{"name":"0x0021"},{"name":"0x0022"},{"name":"0x0024"},{"name":"0x0025"},{"name":"0x0026"},{"name":"0x0028"},{"name":"0x0029"},{"name":"0x002a"},{"name":"0x0030"},{"name":"0x0031"},{"name":"0x0032"},{"name":"0x0033"},{"name":"0x0034"},{"name":"0x0036"},{"name":"0x0037"},{"name":"0x0038"},{"name":"0x003a"},{"name":"0x003b"},{"name":"0x003c"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"},{"name":"0x07"},{"name":"0x08"},{"name":"0x09"},{"name":"0x0a"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"},{"name":"0x43"},{"name":"0x44"},{"name":"0x47"},{"name":"0x4b"},{"name":"0x4c"}]}]}]}}]}}
+2019-03-05T09:02:56.649 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0006", "commandId": "0x00"}
+2019-03-05T09:02:56.654 [DBG] appd::data_recv()  {"cmd":{"proto":"data","id":74,"op":"ack"}}
+2019-03-05T09:02:56.655 [DBG] appd::data_cmd_parse()  {"proto":"data","id":74,"op":"ack"}, protocol data
+2019-03-05T09:02:56.656 [DBG] appd::data_recv_data()  {"proto":"data","id":74,"op":"ack"}, recv_request_id 74
+2019-03-05T09:02:56.669 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":75,"op":"ack"}}
+2019-03-05T09:02:56.670 [DBG] appd::data_cmd_parse()  {"proto":"gateway","id":75,"op":"ack"}, protocol gateway
+2019-03-05T09:02:56.671 [DBG] appd::gw_cmd_parse()  {"proto":"gateway","id":75,"op":"ack"}
+2019-03-05T09:02:56.771 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0008]->cmd_id[0x872B30] = "0x00"
+2019-03-05T09:02:56.772 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x864200]->0x0000 update end
+2019-03-05T09:02:56.790 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:56.812 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0008", "commandId": "0x06"}
+2019-03-05T09:02:56.842 [DBG] appd::data_recv()  {"cmd":{"proto":"data","id":74,"op":"confirm_true"}}
+2019-03-05T09:02:56.893 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0008", "commandId": "0x0B"}
+2019-03-05T09:02:56.911 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:02:56.923 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:02:57.107 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0008]->cmd_id[0x87B378] = "0x00"
+2019-03-05T09:02:57.115 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x866960]->0x0000 update end
+2019-03-05T09:02:57.118 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:57.140 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0008", "commandId": "0x06"}
+2019-03-05T09:02:57.151 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0006", "commandId": "0x2C"}
+2019-03-05T09:02:57.156 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0005", "commandId": "0x2C"}
+2019-03-05T09:02:57.215 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0008", "commandId": "0x0B"}
+2019-03-05T09:02:57.287 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x87C508] = "0x00"
+2019-03-05T09:02:57.288 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x7FC628]->0x0000 update end
+2019-03-05T09:02:57.300 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:57.310 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:02:57.413 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:02:57.448 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:02:57.459 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:02:57.684 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x87D560] = "0x00"
+2019-03-05T09:02:57.698 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x86B3E0]->0x0000 update end
+2019-03-05T09:02:57.714 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:57.719 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:02:57.831 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:02:57.839 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x87E1D8] = "0x00"
+2019-03-05T09:02:57.840 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x867E98]->0x0000 update end
+2019-03-05T09:02:57.851 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:57.877 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:02:57.936 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:02:57.965 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:02:57.976 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:02:58.148 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x8889C0] = "0x00"
+2019-03-05T09:02:58.149 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x87CF78]->0x0000 update end
+2019-03-05T09:02:58.165 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:58.175 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:02:58.235 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:02:58.340 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x828EC8] = "0x00"
+2019-03-05T09:02:58.343 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x87DCF0]->0x0000 update end
+2019-03-05T09:02:58.356 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:58.385 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:02:58.478 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:02:58.487 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:02:58.495 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:02:58.656 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x88A500] = "0x00"
+2019-03-05T09:02:58.657 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x889D60]->0x0000 update end
+2019-03-05T09:02:58.672 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:58.697 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:02:58.813 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:02:58.847 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x875318] = "0x00"
+2019-03-05T09:02:58.849 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x832FA0]->0x0000 update end
+2019-03-05T09:02:58.852 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:58.861 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:02:58.941 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:02:59.035 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:02:59.044 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:02:59.173 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x866A08] = "0x00"
+2019-03-05T09:02:59.175 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x0000]->0x0000 update end
+2019-03-05T09:02:59.181 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:59.204 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:02:59.278 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:02:59.368 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x88CEB8] = "0x00"
+2019-03-05T09:02:59.378 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x88BF90]->0x0000 update end
+2019-03-05T09:02:59.388 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:02:59.409 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:02:59.477 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:02:59.628 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":75,"op":"nak","args":[{"err":"conn_err","name":"0x000D6F000C38A2FB","dests":1,"op":"add_node"}]}}
+2019-03-05T09:02:59.628 [DBG] appd::ops_nak_process()  got nak for op add_node, req_id = 75
+2019-03-05T09:02:59.631 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":75,"op":"confirm_false","args":[{"err":"conn_err","dests":1}]}}
+2019-03-05T09:02:59.631 [WRN] appd::appd_node_ops_confirm_handler()  node 0x000D6F000C38A2FB add failed: err 1
+2019-03-05T09:02:59.631 [ERR] appd::node_cloud_op_complete()  0x000D6F000C38A2FB: connectivity error on CLOUD_ADD
+2019-03-05T09:03:36.545 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0019]->cmd_id[0x88D1A0] = "0x01021002A001000000010E"
+2019-03-05T09:03:36.546 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x874DE0]->0x0000 update end
+2019-03-05T09:03:36.595 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0019", "commandId": "0x02"}
+2019-03-05T09:03:59.078 [DBG] appd::node_step_handler()  0x000D6F000C38A2FB: cloud add
+2019-03-05T09:03:59.079 [INF] appd::appd_node_add_handler()  sending add_node for 0x000D6F000C38A2FB
+2019-03-05T09:03:59.084 [DBG] appd::data_send_json()  {"cmd":{"proto":"gateway","id":76,"op":"add_node","opts":{"confirm":true},"args":[{"node":{"address":"0x000D6F000C38A2FB","oem_model":"0x0102","interface":1,"power":0,"subdevices":[{"subdevice_key":"1","templates":[{"template_key":"0x0000","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x4000"}]},{"template_key":"0x0003","version":"1.0","properties":[{"name":"0x0000"}]},{"template_key":"0x0006","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"}]},{"template_key":"0x0008","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"}]},{"template_key":"0x0300","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0008"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x4003"},{"name":"0x4004"},{"name":"0x4005"},{"name":"0x4006"},{"name":"0x400a"},{"name":"0x400b"},{"name":"0x400c"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0015"},{"name":"0x0016"},{"name":"0x0017"},{"name":"0x0019"},{"name":"0x001a"},{"name":"0x001b"},{"name":"0x0020"},{"name":"0x0021"},{"name":"0x0022"},{"name":"0x0024"},{"name":"0x0025"},{"name":"0x0026"},{"name":"0x0028"},{"name":"0x0029"},{"name":"0x002a"},{"name":"0x0030"},{"name":"0x0031"},{"name":"0x0032"},{"name":"0x0033"},{"name":"0x0034"},{"name":"0x0036"},{"name":"0x0037"},{"name":"0x0038"},{"name":"0x003a"},{"name":"0x003b"},{"name":"0x003c"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"},{"name":"0x07"},{"name":"0x08"},{"name":"0x09"},{"name":"0x0a"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"},{"name":"0x43"},{"name":"0x44"},{"name":"0x47"},{"name":"0x4b"},{"name":"0x4c"}]}]}]}}]}}
+2019-03-05T09:03:59.094 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":76,"op":"ack"}}
+2019-03-05T09:03:59.095 [DBG] appd::data_cmd_parse()  {"proto":"gateway","id":76,"op":"ack"}, protocol gateway
+2019-03-05T09:03:59.097 [DBG] appd::gw_cmd_parse()  {"proto":"gateway","id":76,"op":"ack"}
+2019-03-05T09:04:00.390 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":76,"op":"nak","args":[{"err":"conn_err","name":"0x000D6F000C38A2FB","dests":1,"op":"add_node"}]}}
+2019-03-05T09:04:00.393 [DBG] appd::ops_nak_process()  got nak for op add_node, req_id = 76
+2019-03-05T09:04:00.394 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":76,"op":"confirm_false","args":[{"err":"conn_err","dests":1}]}}
+2019-03-05T09:04:00.395 [WRN] appd::appd_node_ops_confirm_handler()  node 0x000D6F000C38A2FB add failed: err 1
+2019-03-05T09:04:00.396 [ERR] appd::node_cloud_op_complete()  0x000D6F000C38A2FB: connectivity error on CLOUD_ADD
+2019-03-05T09:04:04.986 [DBG] appd::appd_zb_permit_join_timeout()  disable ZigBee permit join successed
+2019-03-05T09:04:04.987 [DBG] appd::prop_val_send()  zb_join_status
+2019-03-05T09:04:04.988 [DBG] appd::data_send_json()  {"cmd":{"proto":"data","id":77,"op":"prop_send","opts":{"confirm":true},"args":[{"property":{"name":"zb_join_status","base_type":"boolean","value":0,"dev_time_ms":1551776644987}}]}}
+2019-03-05T09:04:04.998 [DBG] appd::data_recv()  {"cmd":{"proto":"data","id":77,"op":"ack"}}
+2019-03-05T09:04:04.999 [DBG] appd::data_cmd_parse()  {"proto":"data","id":77,"op":"ack"}, protocol data
+2019-03-05T09:04:04.999 [DBG] appd::data_recv_data()  {"proto":"data","id":77,"op":"ack"}, recv_request_id 77
+2019-03-05T09:04:05.166 [DBG] appd::data_recv()  {"cmd":{"proto":"data","id":77,"op":"confirm_true"}}
+2019-03-05T09:04:06.025 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x7773DEFC00000000", "status": "0x00", "clusterId": "0x0036", "commandId": "0x01"}
+2019-03-05T09:04:55.962 [DBG] appd::deviceleft_topicHandler()  Nodes [0x000D6F000C38A2FB] left
+2019-03-05T09:04:55.974 [DBG] appd::appd_node_left()  Node 0x000D6F000C38A2FB left network
+2019-03-05T09:04:55.976 [DBG] appd::appd_update_as_offline_status()  Updated node 0x000D6F000C38A2FB connection status as offline
+2019-03-05T09:04:55.977 [ERR] appd::node_network_op_complete()  0x000D6F000C38A2FB: CLOUD_ADD failed with UKNOWN status
+2019-03-05T09:04:55.979 [ERR] appd::node_op_complete()  0x000D6F000C38A2FB: no operation in progress
+2019-03-05T09:04:55.984 [DBG] appd::relays_topicHandler()  relays_topic: 
+
+2019-03-05T09:04:56.009 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x0041C9187F890B38", "status": "0x00", "clusterId": "0x0034", "commandId": "0xA2"}
+2019-03-05T09:04:56.854 [DBG] appd::node_step_handler()  0x000D6F000C38A2FB: cloud add
+2019-03-05T09:04:56.855 [INF] appd::appd_node_add_handler()  sending add_node for 0x000D6F000C38A2FB
+2019-03-05T09:04:56.860 [DBG] appd::data_send_json()  {"cmd":{"proto":"gateway","id":78,"op":"add_node","opts":{"confirm":true},"args":[{"node":{"address":"0x000D6F000C38A2FB","oem_model":"0x0102","interface":1,"power":0,"subdevices":[{"subdevice_key":"1","templates":[{"template_key":"0x0000","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x4000"}]},{"template_key":"0x0003","version":"1.0","properties":[{"name":"0x0000"}]},{"template_key":"0x0006","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"}]},{"template_key":"0x0008","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"}]},{"template_key":"0x0300","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0008"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x4003"},{"name":"0x4004"},{"name":"0x4005"},{"name":"0x4006"},{"name":"0x400a"},{"name":"0x400b"},{"name":"0x400c"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0015"},{"name":"0x0016"},{"name":"0x0017"},{"name":"0x0019"},{"name":"0x001a"},{"name":"0x001b"},{"name":"0x0020"},{"name":"0x0021"},{"name":"0x0022"},{"name":"0x0024"},{"name":"0x0025"},{"name":"0x0026"},{"name":"0x0028"},{"name":"0x0029"},{"name":"0x002a"},{"name":"0x0030"},{"name":"0x0031"},{"name":"0x0032"},{"name":"0x0033"},{"name":"0x0034"},{"name":"0x0036"},{"name":"0x0037"},{"name":"0x0038"},{"name":"0x003a"},{"name":"0x003b"},{"name":"0x003c"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"},{"name":"0x07"},{"name":"0x08"},{"name":"0x09"},{"name":"0x0a"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"},{"name":"0x43"},{"name":"0x44"},{"name":"0x47"},{"name":"0x4b"},{"name":"0x4c"}]}]}]}}]}}
+2019-03-05T09:04:56.871 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":78,"op":"ack"}}
+2019-03-05T09:04:56.872 [DBG] appd::data_cmd_parse()  {"proto":"gateway","id":78,"op":"ack"}, protocol gateway
+2019-03-05T09:04:56.873 [DBG] appd::gw_cmd_parse()  {"proto":"gateway","id":78,"op":"ack"}
+2019-03-05T09:04:58.157 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":78,"op":"nak","args":[{"err":"conn_err","name":"0x000D6F000C38A2FB","dests":1,"op":"add_node"}]}}
+2019-03-05T09:04:58.157 [DBG] appd::ops_nak_process()  got nak for op add_node, req_id = 78
+2019-03-05T09:04:58.159 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":78,"op":"confirm_false","args":[{"err":"conn_err","dests":1}]}}
+2019-03-05T09:04:58.159 [WRN] appd::appd_node_ops_confirm_handler()  node 0x000D6F000C38A2FB add failed: err 1
+2019-03-05T09:04:58.160 [ERR] appd::node_cloud_op_complete()  0x000D6F000C38A2FB: connectivity error on CLOUD_ADD
+2019-03-05T09:05:03.055 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x7F890006004E6600", "status": "0x00", "clusterId": "0x0005", "commandId": "0x2C"}
+2019-03-05T09:05:03.129 [INF] appd::devicejoined_topicHandler()  Newly joined device: 0x000D6F000C38A2FB
+2019-03-05T09:05:03.129 [DBG] appd::appd_node_leaving_check()  node 0x000D6F000C38A2FB joined network
+2019-03-05T09:05:03.130 [DBG] appd::appd_node_add()  Add node 0x000D6F000C38A2FB into network
+2019-03-05T09:05:03.130 [DBG] appd::node_joined()  0x000D6F000C38A2FB: is already being tracked
+2019-03-05T09:05:03.150 [DBG] appd::appd_node_add()  node info already exists for node 0x000D6F000C38A2FB
+2019-03-05T09:05:03.151 [DBG] appd::appd_node_add()  node 0x000D6F000C38A2FB added success
+2019-03-05T09:05:03.152 [DBG] appd::debug_print_node_info()  node addr=0x000D6F000C38A2FB, version=, oem_model=zblight, interface=1, power=0, online=0
+2019-03-05T09:05:03.153 [DBG] appd::debug_print_node_info()  node_eui=0x000D6F000C38A2FBnode_id=0x2CEF, profile_id=0x0000, device_id=0x0102
+2019-03-05T09:05:03.155 [DBG] appd::debug_print_node_info()  sent_online=1, node_ready=0, leaving=0, thermostat_bind=0
+2019-03-05T09:05:03.156 [DBG] appd::debug_print_node_info()  model_id=, alias=
+2019-03-05T09:05:03.157 [DBG] appd::debug_print_node_info()  zone_type=0x00, manufacter_code=0x00, zone_id=255
+2019-03-05T09:05:03.158 [ERR] appd::devicejoined_topicHandler()  Don't support cluster_id = 0x0004
+2019-03-05T09:05:03.161 [ERR] appd::devicejoined_topicHandler()  Don't support cluster_id = 0x0005
+2019-03-05T09:05:03.162 [INF] appd::zcl_reprot_set()  bind: "{"commands":[{"command":"zdo bind 0x2CEF 0x1 0x1 0x0006 {000D6F000C38A2FB} {000D6F000BB3C188}","postDelayMs":100},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.164 [INF] appd::zcl_reprot_set()  report: "{"commands":[{"command":"zcl global send-me-a-report 0x0006 0x0000 0x10 0x0001 0x0258 {1}"},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.165 [INF] appd::zcl_reprot_set()  bind: "{"commands":[{"command":"zdo bind 0x2CEF 0x1 0x1 0x0008 {000D6F000C38A2FB} {000D6F000BB3C188}","postDelayMs":100},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.167 [INF] appd::zcl_reprot_set()  report: "{"commands":[{"command":"zcl global send-me-a-report 0x0008 0x0000 0x20 0x0001 0x0258 {01 00}"},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.169 [INF] appd::zcl_reprot_set()  bind: "{"commands":[{"command":"zdo bind 0x2CEF 0x1 0x1 0x0300 {000D6F000C38A2FB} {000D6F000BB3C188}","postDelayMs":100},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.170 [INF] appd::zcl_reprot_set()  report: "{"commands":[{"command":"zcl global send-me-a-report 0x0300 0x0000 0x20 0x0001 0x0258 {01 00}"},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.172 [INF] appd::zcl_reprot_set()  bind: "{"commands":[{"command":"zdo bind 0x2CEF 0x1 0x1 0x0300 {000D6F000C38A2FB} {000D6F000BB3C188}","postDelayMs":100},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.173 [INF] appd::zcl_reprot_set()  report: "{"commands":[{"command":"zcl global send-me-a-report 0x0300 0x0001 0x20 0x0001 0x0258 {01 00}"},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.175 [INF] appd::zcl_reprot_set()  bind: "{"commands":[{"command":"zdo bind 0x2CEF 0x1 0x1 0x0300 {000D6F000C38A2FB} {000D6F000BB3C188}","postDelayMs":100},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.177 [INF] appd::zcl_reprot_set()  report: "{"commands":[{"command":"zcl global send-me-a-report 0x0300 0x0003 0x21 0x0001 0x0258 {01 00}"},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.178 [INF] appd::zcl_reprot_set()  bind: "{"commands":[{"command":"zdo bind 0x2CEF 0x1 0x1 0x0300 {000D6F000C38A2FB} {000D6F000BB3C188}","postDelayMs":100},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.180 [INF] appd::zcl_reprot_set()  report: "{"commands":[{"command":"zcl global send-me-a-report 0x0300 0x0004 0x21 0x0001 0x0258 {01 00}"},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.181 [INF] appd::zcl_reprot_set()  bind: "{"commands":[{"command":"zdo bind 0x2CEF 0x1 0x1 0x0300 {000D6F000C38A2FB} {000D6F000BB3C188}","postDelayMs":100},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.183 [INF] appd::zcl_reprot_set()  report: "{"commands":[{"command":"zcl global send-me-a-report 0x0300 0x0007 0x21 0x0001 0x0258 {01 00}"},{"command":"plugin device-table send {000D6F000C38A2FB} 1","postDelayMs":100}]}"
+2019-03-05T09:05:03.184 [ERR] appd::devicejoined_topicHandler()  Don't support cluster_id = 0x0B05
+2019-03-05T09:05:03.185 [ERR] appd::devicejoined_topicHandler()  Don't support cluster_id = 0xFC01
+2019-03-05T09:05:03.185 [ERR] appd::devicejoined_topicHandler()  Don't support cluster_id = 0xFC02
+2019-03-05T09:05:03.186 [ERR] appd::devicejoined_topicHandler()  Don't support cluster_id = 0x0019
+2019-03-05T09:05:03.198 [DBG] appd::node_step_handler()  0x000D6F000C38A2FB: cloud add
+2019-03-05T09:05:03.200 [INF] appd::appd_node_add_handler()  sending add_node for 0x000D6F000C38A2FB
+2019-03-05T09:05:03.213 [DBG] appd::data_send_json()  {"cmd":{"proto":"gateway","id":79,"op":"add_node","opts":{"confirm":true},"args":[{"node":{"address":"0x000D6F000C38A2FB","oem_model":"0x0102","interface":1,"power":0,"subdevices":[{"subdevice_key":"1","templates":[{"template_key":"0x0000","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x4000"}]},{"template_key":"0x0003","version":"1.0","properties":[{"name":"0x0000"}]},{"template_key":"0x0006","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"}]},{"template_key":"0x0008","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"}]},{"template_key":"0x0300","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0008"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x4003"},{"name":"0x4004"},{"name":"0x4005"},{"name":"0x4006"},{"name":"0x400a"},{"name":"0x400b"},{"name":"0x400c"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0015"},{"name":"0x0016"},{"name":"0x0017"},{"name":"0x0019"},{"name":"0x001a"},{"name":"0x001b"},{"name":"0x0020"},{"name":"0x0021"},{"name":"0x0022"},{"name":"0x0024"},{"name":"0x0025"},{"name":"0x0026"},{"name":"0x0028"},{"name":"0x0029"},{"name":"0x002a"},{"name":"0x0030"},{"name":"0x0031"},{"name":"0x0032"},{"name":"0x0033"},{"name":"0x0034"},{"name":"0x0036"},{"name":"0x0037"},{"name":"0x0038"},{"name":"0x003a"},{"name":"0x003b"},{"name":"0x003c"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"},{"name":"0x07"},{"name":"0x08"},{"name":"0x09"},{"name":"0x0a"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"},{"name":"0x43"},{"name":"0x44"},{"name":"0x47"},{"name":"0x4b"},{"name":"0x4c"}]}]}]}}]}}
+2019-03-05T09:05:03.244 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0004", "commandId": "0x2C"}
+2019-03-05T09:05:03.255 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":79,"op":"ack"}}
+2019-03-05T09:05:03.255 [DBG] appd::data_cmd_parse()  {"proto":"gateway","id":79,"op":"ack"}, protocol gateway
+2019-03-05T09:05:03.256 [DBG] appd::gw_cmd_parse()  {"proto":"gateway","id":79,"op":"ack"}
+2019-03-05T09:05:03.382 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:05:03.391 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:05:03.539 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x877838] = "0x00"
+2019-03-05T09:05:03.540 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[]->cluster[0x88F410]->0x0000 update end
+2019-03-05T09:05:03.544 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:03.588 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:03.601 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0006", "commandId": "0x2C"}
+2019-03-05T09:05:03.657 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:03.760 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x898F60] = "0x00"
+2019-03-05T09:05:03.760 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[p->cluster[0x88F090]->0x0000 update end
+2019-03-05T09:05:03.765 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:03.793 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:03.874 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x0041C9187F890B38", "status": "0x00", "clusterId": "0x0036", "commandId": "0x00"}
+2019-03-05T09:05:03.882 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:03.899 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x0043929C7F890B38", "status": "0x00", "clusterId": "0x0036", "commandId": "0x00"}
+2019-03-05T09:05:03.909 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:05:03.921 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:05:04.068 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x878818] = "0x00"
+2019-03-05T09:05:04.070 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x898320]->0x0000 update end
+2019-03-05T09:05:04.079 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:04.088 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:04.136 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:04.237 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0008]->cmd_id[0x876398] = "0x00"
+2019-03-05T09:05:04.238 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x8781D0]->0x0000 update end
+2019-03-05T09:05:04.247 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:04.266 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0008", "commandId": "0x06"}
+2019-03-05T09:05:04.303 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0008", "commandId": "0x0B"}
+2019-03-05T09:05:04.358 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:05:04.367 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:05:04.458 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":79,"op":"nak","args":[{"err":"conn_err","name":"0x000D6F000C38A2FB","dests":1,"op":"add_node"}]}}
+2019-03-05T09:05:04.459 [DBG] appd::ops_nak_process()  got nak for op add_node, req_id = 79
+2019-03-05T09:05:04.461 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":79,"op":"confirm_false","args":[{"err":"conn_err","dests":1}]}}
+2019-03-05T09:05:04.461 [WRN] appd::appd_node_ops_confirm_handler()  node 0x000D6F000C38A2FB add failed: err 1
+2019-03-05T09:05:04.462 [ERR] appd::node_cloud_op_complete()  0x000D6F000C38A2FB: connectivity error on CLOUD_ADD
+2019-03-05T09:05:04.519 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0008]->cmd_id[0x897A20] = "0x00"
+2019-03-05T09:05:04.520 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[hy->cluster[0x889D60]->0x0000 update end
+2019-03-05T09:05:04.530 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:04.555 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0008", "commandId": "0x06"}
+2019-03-05T09:05:04.624 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0008", "commandId": "0x0B"}
+2019-03-05T09:05:04.787 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x895F58] = "0x00"
+2019-03-05T09:05:04.789 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[(t->cluster[0x88F090]->0x0000 update end
+2019-03-05T09:05:04.796 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:04.812 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:04.873 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:05:04.888 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:05:04.936 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:05.047 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x877938] = "0x00"
+2019-03-05T09:05:05.048 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[1]->cluster[0x890210]->0x0000 update end
+2019-03-05T09:05:05.058 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:05.076 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:05.089 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:05.211 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x8976C8] = "0x00"
+2019-03-05T09:05:05.212 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x878318]->0x0000 update end
+2019-03-05T09:05:05.223 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:05.247 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:05.277 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:05.407 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:05:05.415 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:05:05.531 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x896710] = "0x00"
+2019-03-05T09:05:05.532 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x8979F8]->0x0000 update end
+2019-03-05T09:05:05.543 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:05.570 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:05.588 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:05.729 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x895488] = "0x00"
+2019-03-05T09:05:05.735 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[(n->cluster[0x876FA0]->0x0000 update end
+2019-03-05T09:05:05.740 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:05.745 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:05.776 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:05.858 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:05:05.867 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:05:06.031 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x896BA0] = "0x00"
+2019-03-05T09:05:06.032 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x0000]->0x0000 update end
+2019-03-05T09:05:06.039 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:06.048 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:06.071 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:06.215 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x8940D0] = "0x00"
+2019-03-05T09:05:06.216 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[1]->cluster[0x87A658]->0x0000 update end
+2019-03-05T09:05:06.222 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:06.243 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:06.296 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:06.359 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "bindResponse", "eui64": "0x000D6F000C38A2FB", "status": "0x00"}
+2019-03-05T09:05:06.377 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0021", "commandId": "0xA2"}
+2019-03-05T09:05:06.533 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x86A3E0] = "0x00"
+2019-03-05T09:05:06.543 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x0000]->0x0000 update end
+2019-03-05T09:05:06.546 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:06.553 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:06.576 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:05:06.711 [INF] appd::wlt_zclresponse_handler()  command:dev[0x000D6F000C38A2FB-1]->cluster[0x0300]->cmd_id[0x89BEB0] = "0x00"
+2019-03-05T09:05:06.712 [DBG] appd::wlt_zclresponse_handler()  attribute: dev[-1]->cluster[0x0000]->0x0000 update end
+2019-03-05T09:05:06.723 [DBG] appd::zdoresponse_topicHandler()  zdoresponset: {"zdoType": "configureReportResponse", "deviceEndpoint": {"eui64": "0x000D6F000C38A2FB", "endpoint": 1}, "status": "0x00"}
+2019-03-05T09:05:06.735 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x06"}
+2019-03-05T09:05:06.752 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0300", "commandId": "0x0B"}
+2019-03-05T09:06:03.915 [DBG] appd::node_step_handler()  0x000D6F000C38A2FB: cloud add
+2019-03-05T09:06:03.916 [INF] appd::appd_node_add_handler()  sending add_node for 0x000D6F000C38A2FB
+2019-03-05T09:06:03.921 [DBG] appd::data_send_json()  {"cmd":{"proto":"gateway","id":80,"op":"add_node","opts":{"confirm":true},"args":[{"node":{"address":"0x000D6F000C38A2FB","oem_model":"0x0102","interface":1,"power":0,"subdevices":[{"subdevice_key":"1","templates":[{"template_key":"0x0000","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x4000"}]},{"template_key":"0x0003","version":"1.0","properties":[{"name":"0x0000"}]},{"template_key":"0x0006","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"}]},{"template_key":"0x0008","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"}]},{"template_key":"0x0300","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0008"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x4003"},{"name":"0x4004"},{"name":"0x4005"},{"name":"0x4006"},{"name":"0x400a"},{"name":"0x400b"},{"name":"0x400c"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0015"},{"name":"0x0016"},{"name":"0x0017"},{"name":"0x0019"},{"name":"0x001a"},{"name":"0x001b"},{"name":"0x0020"},{"name":"0x0021"},{"name":"0x0022"},{"name":"0x0024"},{"name":"0x0025"},{"name":"0x0026"},{"name":"0x0028"},{"name":"0x0029"},{"name":"0x002a"},{"name":"0x0030"},{"name":"0x0031"},{"name":"0x0032"},{"name":"0x0033"},{"name":"0x0034"},{"name":"0x0036"},{"name":"0x0037"},{"name":"0x0038"},{"name":"0x003a"},{"name":"0x003b"},{"name":"0x003c"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"},{"name":"0x07"},{"name":"0x08"},{"name":"0x09"},{"name":"0x0a"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"},{"name":"0x43"},{"name":"0x44"},{"name":"0x47"},{"name":"0x4b"},{"name":"0x4c"}]}]}]}}]}}
+2019-03-05T09:06:03.932 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":80,"op":"ack"}}
+2019-03-05T09:06:03.933 [DBG] appd::data_cmd_parse()  {"proto":"gateway","id":80,"op":"ack"}, protocol gateway
+2019-03-05T09:06:03.934 [DBG] appd::gw_cmd_parse()  {"proto":"gateway","id":80,"op":"ack"}
+2019-03-05T09:06:05.441 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":80,"op":"nak","args":[{"err":"conn_err","name":"0x000D6F000C38A2FB","dests":1,"op":"add_node"}]}}
+2019-03-05T09:06:05.441 [DBG] appd::ops_nak_process()  got nak for op add_node, req_id = 80
+2019-03-05T09:06:05.444 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":80,"op":"confirm_false","args":[{"err":"conn_err","dests":1}]}}
+2019-03-05T09:06:05.444 [WRN] appd::appd_node_ops_confirm_handler()  node 0x000D6F000C38A2FB add failed: err 1
+2019-03-05T09:06:05.444 [ERR] appd::node_cloud_op_complete()  0x000D6F000C38A2FB: connectivity error on CLOUD_ADD
+2019-03-05T09:07:03.260 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x000D6F000C38A2FB", "status": "0x00", "clusterId": "0x0034", "commandId": "0xA2"}
+2019-03-05T09:07:03.266 [DBG] appd::devicestatechange_topicHandler()  devicestatechange_topicHandler
+
+2019-03-05T09:07:03.686 [DBG] appd::deviceleft_topicHandler()  Nodes [0x000D6F000C38A2FB] left
+2019-03-05T09:07:03.687 [DBG] appd::appd_node_left()  Node 0x000D6F000C38A2FB left network
+2019-03-05T09:07:03.689 [DBG] appd::relays_topicHandler()  relays_topic: 
+
+2019-03-05T09:07:04.463 [DBG] appd::node_step_handler()  0x000D6F000C38A2FB: cloud add
+2019-03-05T09:07:04.464 [INF] appd::appd_node_add_handler()  sending add_node for 0x000D6F000C38A2FB
+2019-03-05T09:07:04.469 [DBG] appd::data_send_json()  {"cmd":{"proto":"gateway","id":81,"op":"add_node","opts":{"confirm":true},"args":[{"node":{"address":"0x000D6F000C38A2FB","oem_model":"0x0102","interface":1,"power":0,"subdevices":[{"subdevice_key":"1","templates":[{"template_key":"0x0000","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x4000"}]},{"template_key":"0x0003","version":"1.0","properties":[{"name":"0x0000"}]},{"template_key":"0x0006","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"}]},{"template_key":"0x0008","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0014"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"}]},{"template_key":"0x0300","version":"1.0","properties":[{"name":"0x0000"},{"name":"0x0001"},{"name":"0x0002"},{"name":"0x0003"},{"name":"0x0004"},{"name":"0x0005"},{"name":"0x0006"},{"name":"0x0007"},{"name":"0x0008"},{"name":"0x4000"},{"name":"0x4001"},{"name":"0x4002"},{"name":"0x4003"},{"name":"0x4004"},{"name":"0x4005"},{"name":"0x4006"},{"name":"0x400a"},{"name":"0x400b"},{"name":"0x400c"},{"name":"0x0010"},{"name":"0x0011"},{"name":"0x0012"},{"name":"0x0013"},{"name":"0x0015"},{"name":"0x0016"},{"name":"0x0017"},{"name":"0x0019"},{"name":"0x001a"},{"name":"0x001b"},{"name":"0x0020"},{"name":"0x0021"},{"name":"0x0022"},{"name":"0x0024"},{"name":"0x0025"},{"name":"0x0026"},{"name":"0x0028"},{"name":"0x0029"},{"name":"0x002a"},{"name":"0x0030"},{"name":"0x0031"},{"name":"0x0032"},{"name":"0x0033"},{"name":"0x0034"},{"name":"0x0036"},{"name":"0x0037"},{"name":"0x0038"},{"name":"0x003a"},{"name":"0x003b"},{"name":"0x003c"},{"name":"0x00"},{"name":"0x01"},{"name":"0x02"},{"name":"0x03"},{"name":"0x04"},{"name":"0x05"},{"name":"0x06"},{"name":"0x07"},{"name":"0x08"},{"name":"0x09"},{"name":"0x0a"},{"name":"0x40"},{"name":"0x41"},{"name":"0x42"},{"name":"0x43"},{"name":"0x44"},{"name":"0x47"},{"name":"0x4b"},{"name":"0x4c"}]}]}]}}]}}
+2019-03-05T09:07:04.480 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":81,"op":"ack"}}
+2019-03-05T09:07:04.481 [DBG] appd::data_cmd_parse()  {"proto":"gateway","id":81,"op":"ack"}, protocol gateway
+2019-03-05T09:07:04.482 [DBG] appd::gw_cmd_parse()  {"proto":"gateway","id":81,"op":"ack"}
+2019-03-05T09:07:05.578 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":81,"op":"nak","args":[{"err":"conn_err","name":"0x000D6F000C38A2FB","dests":1,"op":"add_node"}]}}
+2019-03-05T09:07:05.578 [DBG] appd::ops_nak_process()  got nak for op add_node, req_id = 81
+2019-03-05T09:07:05.580 [DBG] appd::data_recv()  {"cmd":{"proto":"gateway","id":81,"op":"confirm_false","args":[{"err":"conn_err","dests":1}]}}
+2019-03-05T09:07:05.580 [WRN] appd::appd_node_ops_confirm_handler()  node 0x000D6F000C38A2FB add failed: err 1
+2019-03-05T09:07:05.581 [ERR] appd::node_cloud_op_complete()  0x000D6F000C38A2FB: connectivity error on CLOUD_ADD
+2019-03-05T09:07:09.937 [DBG] appd::apsresponse_topicHandler()  apsresponse: {"statusType": "apsAck", "eui64": "0x0041C9187F890B38", "status": "0x00", "clusterId": "0x0005", "commandId": "0x2C"}
+2019-03-05T09:07:10.018 [INF] appd::devicejoined_topicHandler()  Newly joined device: 0x000D6F000C38A2FB
+2019-03-05T09:07:10.019 [DBG] appd::appd_node_leaving_check()  node 0x000D6F000C38A2FB joined network
+2019-03-05T09:07:10.019 [DBG] appd::appd_node_join_network()  node is leaving
+2019-03-05T09:07:10.019 [DBG] appd::appd_add_delay_record()  added a delay record, node addr 0x000D6F000C38A2FB, node_id=0x2CEF
+Segmentation fault
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
+root@Ayla:~/opt/application# 
